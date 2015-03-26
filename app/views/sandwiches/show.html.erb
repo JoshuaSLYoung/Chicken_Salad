@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @sandwich.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @sandwich.longitude %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @sandwich.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sandwich.description %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @sandwich.title %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @sandwich.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_sandwich_path(@sandwich) %> |
+<%= link_to 'Back', sandwiches_path %>
