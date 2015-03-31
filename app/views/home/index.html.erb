@@ -1,6 +1,8 @@
-<h1>Welcome</h1>
-<p>Your desitination for Chicken Salad</p>
- 
+<h1>Chicken.Salad.</h1>
+ <%= image_tag "CS_Background.jpg", :class => "main" %>
+<p class="overlap">Your destination for Chicken Salad</p>
+<p>Chicken Salad Sandwiches are no longer considered food; They are considered art. No two chicken salad sandwiches are the same, making the search for the perfect combination of chicken and mayo an endless quest. With the help of ilovechickensalad.com, you will now have a one-stop-shop to find reviews, images, and prices of the best chicken salad concoctions in your area. This is the first ever social network that revolves around food, but not just any food — the chicken salad sandwich.</p>
+
 <% if !user_signed_in? %>
   <p>New to ILCS? <%= link_to 'Sign Up!', new_user_registration_path %></p>
   <p>Already a member? <%= link_to 'Sign in', new_user_session_path %></p>

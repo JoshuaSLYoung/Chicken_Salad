@@ -21,6 +21,7 @@ class SandwichesController < ApplicationController
   # GET /sandwiches/1
   # GET /sandwiches/1.json
   def show
+    @sandwich = Sandwich.find(params[:id])
   end
 
   # GET /sandwiches/new
